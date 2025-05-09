@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waking Was a Blur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-screen" class="screen active">
+            <h1>Waking Was a Blur</h1>
+            <p class="author">by Your Name</p>
+            <p class="genre">Poetic Prose</p>
+            <div class="start-button">Begin the Journey</div>
+        </div>
+
+        <div id="introduction-screen" class="screen">
+            <h2>The Blur of Waking</h2>
+            <p class="text-reveal">Waking was a blur. The sudden grace that once lay upon us swiftly torn...</p>
+            <div class="continue-button">Continue</div>
+        </div>
+
+        <div id="section1-screen" class="screen">
+            <div class="theme-tag">Loss of Grace</div>
+            <div class="interactive-text">
+                <span class="word" data-device="imagery">The</span>
+                <span class="word" data-device="imagery">sudden</span>
+                <span class="word" data-device="metaphor">grace</span>
+                <span class="word" data-device="imagery">that</span>
+                <span class="word" data-device="imagery">once</span>
+                <span class="word" data-device="imagery">lay</span>
+                <span class="word" data-device="imagery">upon</span>
+                <span class="word" data-device="imagery">us</span>
+                <span class="word" data-device="enjambment">swiftly</span>
+                <span class="word" data-device="enjambment">torn</span>
+                <span class="word" data-device="metaphor">as</span>
+                <span class="word" data-device="metaphor">each</span>
+                <span class="word" data-device="metaphor">time</span>
+                <span class="word" data-device="metaphor">our</span>
+                <span class="word" data-device="metaphor">eye</span>
+                <span class="word" data-device="metaphor">shut</span>
+                <span class="word" data-device="metaphor">the</span>
+                <span class="word" data-device="metaphor">world</span>
+                <span class="word" data-device="metaphor">consumed.</span>
+            </div>
+            <div class="device-explanation hidden">
+                <p id="device-text"></p>
+            </div>
+            <div class="continue-button">Continue</div>
+        </div>
+
+        <div id="section2-screen" class="screen">
+            <div class="theme-tag">Cyclical Oblivion</div>
+            <div class="blink-container">
+                <p class="blink-text">Each blink a surrender, a slip deeper into what we cannot name.</p>
+                <div class="blink-instruction">Click to blink</div>
+                <div class="eye"></div>
+            </div>
+            <div class="blink-counter">Blinks: <span id="blink-count">0</span>/5</div>
+            <div class="continue-button hidden">Continue</div>
+        </div>
+
+        <div id="reflection-screen" class="screen">
+            <h2>Endless Dreamongade</h2>
+            <p class="reflection-question">Are we writings in this endless dreamongade?</p>
+            <div class="definition-box">
+                <p><span class="term">dreamongade</span>: A portmanteau of 'dream' and 'promenade', suggesting a surreal, unending journey through dreamscapes.</p>
+            </div>
+            <div class="answer-container">
+                <input type="text" id="player-interpretation" placeholder="Your interpretation...">
+                <div class="submit-button">Share Your Thoughts</div>
+            </div>
+            <div class="other-interpretations hidden">
+                <h3>Other Dreamers' Thoughts</h3>
+                <div class="interpretation-list"></div>
+            </div>
+            <div class="restart-button">Begin Again</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
